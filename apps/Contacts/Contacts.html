@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Contacts.css">
+    <title>Contacts App</title>
+</head>
+<body>
+    <!-- Show on 'true' -->
+    <main id="header-contact-add-form">
+        <div class="header-options">
+            <button id="Cancel">Cancel</button>
+            <p>New Contact</p>
+            <a href="#" id="Done">Done</a>
+        </div>
+    </main>
+
+    <!-- Edit State -->
+    <section id="editContact">
+        <!-- <a href="#" id="backToHome">
+            <i class="fa fa-angle-left fa-2x" id="angle-left1"></i>
+            <span id="contactsUIInterface">Contacts</span>
+        </a> -->
+        <a href="#" id="updateButton">Done</a>
+        <div id="inputBlock">
+            <input type="text" id="fName" placeholder="First Name">
+            <input type="text" id="lName" placeholder="Last Name">
+            <input type="text" id="phone" placeholder="Phone number">
+        </div>
+    </section>
+
+    <!-- firstName and lastName structure -->
+    <section id="nameFields">
+        <input type="text" id="firstName" placeholder="First Name">
+        <input type="text" id="lastName" placeholder="Last Name">
+        <input type="text" id="phoneNumber" placeholder="Phone number">
+    </section>
+    
+    <!-- Header -->
+    <header id="add-contacts">
+       <a href="#" class="add-contact"><i class="fa fa-plus"></i></a>
+    </header>
+
+
+    <!-- search & title -->
+    <section id="search-contacts">
+        <h4 class="heading-text">Contacts</h4>
+        <form>
+            <div class="inp-group">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search" id="search-box">
+            </div>
+        </form>
+    </section>
+
+
+    <!-- Section: My Number -->
+    <section id="my-number">
+        <img src="https://img.icons8.com/ios/50/000000/user-female-circle.png" class="personal-img">
+        <span>ACE: +91 111-111-1111</span>
+    </section>
+
+    <!-- Section: Contacts -->
+    <section id="contacts">
+    </section>
+
+    <!-- Show Specific Contact Detail -->
+    <section id="contact-details-per-person">
+        <div id="details-header">
+            <a href="#" id="backBtn">
+                <i class="fa fa-angle-left fa-2x" id="angle-left"></i>
+                <span id="contacts-text">Contacts</span>
+            </a>
+            <a href="#" id="edit-click">Edit</a>
+        </div>
+        <div id="details">
+            <h3 id="details-name"></h3>
+            <a id="phone-wrap"><i class="fa fa-phone"></i></a>
+            <p id="det-phoneNumber"></p>
+        </div>
+        <a href="#" id="deleteContact">Delete Contact</a>
+    </section>
+
+
+    <footer id="deleteContacts">
+        <p>Remove All Contacts</p>
+    </footer>
+
+    <script src="Contacts.js"></script>
+</body>
+</html>

@@ -1,0 +1,300 @@
+/* Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 294px;
+    margin: auto;
+    margin-top: 1rem;
+    padding: .2rem;
+	background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.line {
+    margin: .1rem;
+    margin-left: -10px;
+    color: rgb(227,227,230);
+}
+
+.ruler {
+    color: #ebebeb;
+    margin-top: 5px;
+    width: 294px;
+    margin-left: -5px;
+}
+
+button {
+    outline: none;
+}
+
+/* Header: add-contacts */
+#add-contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+}
+
+#add-contacts a {
+    display: inline-block;
+    padding-bottom: 1rem;
+}
+
+#add-contacts a i {
+    font-weight: lighter;
+    color: rgb(10, 132, 255);
+    position: absolute;
+    right: 8px;
+    display: block;
+}
+
+/* Section: search-title */
+#search-contacts > h4 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: Helvetica;
+    font-weight: 800;
+}
+
+#search-contacts i {
+    color: #666;
+    padding-left: 8px;
+}
+
+#search-contacts form {
+    padding-top: .5rem;
+    border: 1px solid #ebebeb;
+    background: #ebebeb;
+    border-radius: 5px;
+}
+
+#search-contacts form input {
+    border: none;
+    width: 90%;
+    outline: none;
+    height: 100%;
+    font-size: .75rem;
+    padding-bottom: 9px;
+    background: #ebebeb;
+}
+
+/* Section: my-number */
+#my-number {
+    margin-top: 1rem;
+    display: flex;
+    border-top: 2px solid #ebebeb;
+    border-bottom: 2px solid #ebebeb;
+    padding: .2rem;
+    position: relative;
+}
+
+#my-number span {
+    position: absolute;
+    top: 22px;
+    left: 60px;
+}
+
+#my-number > * {
+    align-self: center;
+    padding-left: 5px;
+    color: #999;
+}
+
+#my-number img {
+    color: #ebebeb;
+}
+
+/* Contacts */
+#contacts {
+    margin-left: 10px;
+    margin-top: 2rem;
+}
+
+#contacts:last-child {
+    border-bottom: none;
+}
+
+/* Show/ Hide: Add contact */
+#header-contact-add-form .header-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+#header-contact-add-form .header-options button {
+    color: rgb(10, 132, 255);
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#header-contact-add-form .header-options a {
+    color: rgb(10, 132, 255);
+}
+
+/* Name Fields */
+#nameFields {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0;
+    margin-top: 5vh;
+    max-height: 800px;
+}
+
+#nameFields input {
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    margin-bottom: 1.3rem;
+    border-bottom: 1px solid #ebebeb;
+}
+
+/* Contact Details */
+#contact-details-per-person #details-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#angle-left {
+    margin-right: 5px;
+}
+
+#backBtn {
+    display: flex;
+    align-items: center;
+}
+
+#contact-details-per-person #details-header > * {
+    color: rgb(10, 132, 255);
+    font-size: 1rem;
+    align-items: center;
+}
+
+#edit-click {
+    margin-top: 9px !important;
+}
+
+#details {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    height: 270px;
+    align-items: center;
+}
+
+#phone-wrap {
+    padding: 2rem;
+    background: rgb(10, 132, 255);
+    border-radius: 50%;
+    color: #fff;
+}
+
+#details > * {
+    padding: 1.3rem;
+}
+
+/* Edit State */
+#editContact {
+    position: absolute;
+    margin-top: 10px;
+}
+
+#editContact #updateButton {
+    position: relative;
+    top: -10px;
+    left: 300px !important;
+}
+
+#contactsUIInterface,
+#angle-left1 {
+    position: relative;
+    top: -9px;
+    margin-left: -2px;
+}
+
+#contactsUIInterface {
+    position: relative;
+    top: -14px;
+}
+
+#editContact > * {
+    color: rgb(10, 132, 255);
+}
+
+/* #inputs {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: none !important;
+    
+} */
+
+#inputBlock {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    border: none;
+    margin-bottom: -3rem;
+}
+
+#inputBlock > * {
+    border: none;
+    border-bottom: 1px solid #ebebeb;
+
+    font-size: 1rem;
+    outline: none;
+    margin-bottom: 1.3rem;
+    border-bottom: 1px solid #ebebeb;
+}
+
+#inputBlock {
+    margin-top: 1rem;
+}
+
+/* Delete */
+#deleteContact {
+    position: relative;
+    display: inline-block;
+    margin-top: 1rem;
+
+    color: red;
+    padding: 1rem;
+    width: 100%;
+    text-align: right;
+    margin-left: -15px;
+}
+
+#deleteContact:active {
+    color: rgba(121, 114, 114, 0.1);
+}
+
+/* Delete */
+#deleteContacts {
+    background: #ebebeb;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+	bottom: 15px;
+    width: 300px;
+}
+
+#deleteContacts> * {
+    color: red;
+    padding: .2rem;
+}
+
+#deleteContacts> *:active {
+    background: rgba(167, 152, 152, 0.1);
+}

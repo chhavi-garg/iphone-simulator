@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> iMusic </title>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto&amp;display=swap'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="player">
+        <div class=now-playing>
+        <div class="menu-bar">
+           <i class="material-icons menu-bar" onclick="open_p()">menu</i> 
+        </div>
+        <div class="cover">
+            <img src="./brownn.jpeg" alt="">
+        </div>
+        <div class="info">
+            <div class="title"> Brown Rang </div>
+            <div class="singer"> HONEY SINGH </div>
+        </div>
+        <div class="volume-box">
+            <span class="volume-down"><i class="material-icons">remove</i></span>
+            <input type="range" class="volume-range" step="1" value="80" min="0" max="100"
+                oninput="music.volume = this.value/100">
+            <span class="volume-up"><i class="material-icons">add</i></span>
+        </div>
+        <div class="btn-box">
+            <i class="material-icons repeat" onclick="handleRepeat()">repeat</i>
+            <i class="material-icons favorite active" onclick="handleFavorite()">favorite</i>
+            <i class="material-icons volume" onclick="handleVolume()">volume_up</i>
+        </div>
+        <div class="music-box">
+            <input type="range" step="1" class="seekbar" value="0" min="0" max="100" oninput="handleSeekBar()">
+            <audio class="music-element" id="music-element">
+                <source src="Brown Rang - (amlijatt.in).mp3" type="audio/mp3">
+            </audio>
+            <span class="current-time">0:00</span><span class="duration">0:00</span>
+            <span class="play" onclick="handlePlay()">
+                <i class="material-icons">play_arrow</i>
+            </span>
+        </div>
+        </div>
+        <!-- playlist songs -->
+		<div class="playlist">
+			<div class="p_song">
+				<p id="p_title">Tum hi ho</p>
+				<p id="p_artist">ARIJIT SINGH </p>
+                <i class="material-icons " style="color: blueviolet; size: 30px;">play_circle_filled</i> 
+				
+			</div>
+
+			<div class="p_song active_song">
+				<p id="p_title">Kaise Hua</p>
+				<p id="p_artist">VISHAL MISHRA</p>
+                <i class="material-icons " style="color: blueviolet;">play_circle_filled</i> 
+				
+			</div>
+
+			<div class="p_song">
+				<p id="p_title">Lut Gaye</p>
+				<p id="p_artist">JUBIN NAUTIYAL</p>
+                <i class="material-icons " style="color: blueviolet;">play_circle_filled</i> 
+				
+			</div>
+
+			<div class="p_song">
+				<p id="p_title">Ghalat Fehmi</p>
+				<p id="p_artist">ASIM AZHAR</p>
+                <i class="material-icons " style="color: blueviolet;">play_circle_filled</i> 
+			</div>
+            
+		</div>
+    </div>
+  <script  src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<Title> Calculator </Title>
+<script type="Text/JavaScript">
+
+//function that display values
+function dis(val)
+{
+document.getElementById("Display").value+=val
+ }
+//function for evaluating the digits and return result
+function solve()
+{
+let x = document.getElementById("Display").value
+let y = eval(x)
+document.getElementById("Display").value = y
+}
+//function for clearing the display
+function clr()
+{
+document.getElementById("Display").value = ""
+}
+</script>
+
+<!-- Styling -->
+<style>
+table{
+    position: absolute;
+	border-radius: 20px;
+    height: 2%;
+    width: 2%;
+    object-fit: cover;
+	cellspacing: 10px;
+}
+input[class="operands"]
+{
+border-radius:60%;
+background-color:LightSteelBlue;
+color: black;
+font-weight: bold;
+border-color:LightSteelBlue;
+width: 60px;
+height:60px;
+font-size: 2em;
+}
+
+input[class="operators"]
+{
+border-radius: 60%;
+background-color:Violet;
+color: black;
+font-weight: bold;
+border-color:violet ;
+width: 60px;
+height:60px;
+font-size: 2em;
+}
+
+input[type="text"]
+{
+text-align: right;
+font-weight: bold;
+width:190px;
+height: 50px;
+font-size: 3em;
+}
+
+</style>
+</head>
+
+<!-- Table -->
+<body style="background-color:lavender;">
+<table>
+<tr>
+<!-- clr() function will call clr to clear all the values -->
+<td><input type="button" class="operators" style="border-color:CornFlowerBLue; background-color:CornFlowerBLue;font-size: 1.5em;" value="AC" onclick="clr()"/> </td>
+<td colspan="3"><input type="text" style="border:solid black 3px; background-color:SlateGray;" id="Display"/></td>
+</tr>
+<tr>
+<!-- creating buttons and assigning values to each buttons-->
+<!-- dis("+") will call function dis to display value -->
+<td><input type="button" class="operators" style="border-color:MediumTurquoise; background-color:MediumTurquoise" value="+" onclick="dis('+')"/> </td>
+<!-- dis("1") will call function dis to display value -->
+<td><input type="button" class="operands" value="1" onclick="dis('1')"/></td>
+<!-- dis("2") will call function dis to display value -->
+<td><input type="button" class="operands" value="2" onclick="dis('2')"/></td>
+<!-- dis("3") will call function dis to display value -->
+<td><input type="button" class="operands" value="3" onclick="dis('3')"/></td>
+</tr>
+<tr>
+<!-- dis("-") will call function dis to display value -->
+<td><input type="button" class="operators" style="border-color:DeepPink; background-color:DeepPink" value="-" onclick="dis('-')"/> </td>
+<!-- dis("4") will call function dis to display value -->
+<td><input type="button" class="operands" value="4" onclick="dis('4')"/> </td>
+<!-- dis("5") will call function dis to display value -->
+<td><input type="button" class="operands" value="5" onclick="dis('5')"/> </td>
+<!-- dis("6") will call function dis to display value -->
+<td><input type="button" class="operands" value="6" onclick="dis('6')"/> </td>
+</tr>
+<tr>
+<!-- dis("*") will call function dis to display value -->
+<td><input type="button" class="operators" style="border-color:Orange; background-color:Orange" value="*" onclick="dis('*')"/> </td>
+<!-- dis("7") will call function dis to display value -->
+<td><input type="button" class="operands" value="7" onclick="dis('7')"/> </td>
+<!-- dis("8") will call function dis to display value -->
+<td><input type="button" class="operands" value="8" onclick="dis('8')"/> </td>
+<!-- dis("9") will call function dis to display value -->
+<td><input type="button" class="operands" value="9" onclick="dis('9')"/> </td>
+</tr>
+<tr>
+<!-- dis("/") will call function dis to display value -->
+<td><input type="button" class="operators" style="border-color:Plum; background-color:Plum"  value="/" onclick="dis('/')"/> </td>
+<td><!-- solve() call function solve to evaluate value -->
+<input type="button" class="operators" style="border-color:MediumOrchid; background-color:MediumOrchid"  value="=" onclick="solve()"/></td>
+<!-- dis(".") will call function dis to display value -->
+<td><input type="button" class="operands" value="." onclick="dis('.')"/> </td>
+<!-- dis("0") will call function dis to display value -->
+<td><input type="button" class="operands" value="0" onclick="dis('0')"/> </td>
+</tr>
+</table>
+<br>
+</body>
+</html>
